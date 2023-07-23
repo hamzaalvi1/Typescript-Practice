@@ -6,3 +6,4 @@ img.src =
 img.width = 500;
 const paragraph = document.getElementById("main-para");
 paragraph.innerHTML = "hello world!";
+console.log("type guard");
