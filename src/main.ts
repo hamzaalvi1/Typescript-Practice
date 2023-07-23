@@ -1,55 +1,12 @@
-console.log("Interface");
+console.log("DOM Working");
 
-// custom type
-type Role = "admin" | "employee" | "line-manager";
-type Employee = {
-  name: string;
-  email: string;
-  designation: string;
-  role: Role;
-};
+const img = document.querySelector(".img") as HTMLImageElement;
 
-const employee: Employee = {
-  name: "Hamza Alvi",
-  email: "hamza.ahmed@koderlabs.com",
-  designation: "Senior Software Engineer",
-  role: "employee",
-};
+img.src =
+  "https://www.purina.co.uk/sites/default/files/2023-03/Hero%20Pedigree%20Cats.jpg";
+img.width = 500;
 
-interface Animal {
-  name: string;
-  species: string;
-  color: string;
-  age?: number;
-  roar(sound: string): string;
-}
 
-interface Owner extends Animal {
-  ownerName: string;
-}
+const paragraph = document.getElementById("main-para")!
 
-interface Animal {
-  favoritesFood: string;
-}
-
-interface Vehicle {
-  color: string;
-  modelName: string;
-  modelNumber: string;
-  vehicleType: string;
-  year: number;
-}
-
-const myCat: Owner = {
-  ownerName: "Hamza Alvi",
-  name: "dodo",
-  species: "cat",
-  color: "tuxedo",
-  age: 2,
-  favoritesFood: "fish",
-  roar: function (sound: string) {
-    return `My ${this.species} ${this.name} says ${sound}`;
-  },
-};
-
-console.log(myCat.roar("meow meow!"));
+paragraph.innerHTML = "hello world!"

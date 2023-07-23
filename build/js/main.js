@@ -1,20 +1,8 @@
 "use strict";
-console.log("Interface");
-const employee = {
-    name: "Hamza Alvi",
-    email: "hamza.ahmed@koderlabs.com",
-    designation: "Senior Software Engineer",
-    role: "employee",
-};
-const myCat = {
-    ownerName: "Hamza Alvi",
-    name: "dodo",
-    species: "cat",
-    color: "tuxedo",
-    age: 2,
-    favoritesFood: "fish",
-    roar: function (sound) {
-        return `My ${this.species} ${this.name} says ${sound}`;
-    },
-};
-console.log(myCat.roar("meow meow!"));
+console.log("DOM Working");
+const img = document.querySelector(".img");
+img.src =
+    "https://www.purina.co.uk/sites/default/files/2023-03/Hero%20Pedigree%20Cats.jpg";
+img.width = 500;
+const paragraph = document.getElementById("main-para");
+paragraph.innerHTML = "hello world!";
